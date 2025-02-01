@@ -43,10 +43,18 @@ jobs:
     steps:
       - run: echo ${{ matrix.id }}
 
-  job2:
+  job_branch:
     needs: job1
     runs-on: ubuntu-latest
     steps:
       - uses: Kesin11/actions-timeline@revert_gha_utils
+  job_220:
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
       - uses: Kesin11/actions-timeline@v2.2.0
+  job_222:
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
       - uses: Kesin11/actions-timeline@v2.2.2
