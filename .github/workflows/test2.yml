@@ -166,4 +166,4 @@ jobs:
     needs: job31
     runs-on: ubuntu-latest
     steps:
-      - uses: Kesin11/actions-timeline@v2.2.2
+      - uses: Kesin11/actions-timeline@v2.2.0
