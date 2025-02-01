@@ -47,4 +47,6 @@ jobs:
     needs: job1
     runs-on: ubuntu-latest
     steps:
+      - uses: Kesin11/actions-timeline@revert_gha_utils
       - uses: Kesin11/actions-timeline@v2.2.0
+      - uses: Kesin11/actions-timeline@v2.2.2
